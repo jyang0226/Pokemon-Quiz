@@ -1,8 +1,6 @@
-#pokemonImage {
-    width: 100px;
-    height: 100px;
+title {
+    text-align: center;
 }
-
 body {
     font-family:'Courier New', Courier, monospace;
     align-items: center;
@@ -10,6 +8,22 @@ body {
 }
 
 .container {
-    width: 200px;
-    background-color: aqua;
+    width: 600px;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#pokemonImage {
+    width: 600px;
+    height: 600px;
+    text-align: center;
 }
