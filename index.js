@@ -53,3 +53,13 @@ function toggleDarkMode() {
         body.classList.add('dark-mode');
     }
 }
+
+document.addEventListener('scroll', function() {
+    const message = document.getElementById('message');
+    message.style.display = 'block';
+    console.log("hello world");
+
+    setTimeout(() => {
+        message.style.display = 'none'
+    }, 3000);
+});
