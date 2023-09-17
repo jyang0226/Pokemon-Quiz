@@ -37,3 +37,9 @@ function updateScoreboard() {
     const scoreElement = document.getElementById("score");
     scoreElement.textContent = score;
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.keyCode === 32) {
+        toggleDarkMode();
+    }
+});
