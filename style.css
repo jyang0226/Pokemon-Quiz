@@ -1,5 +1,6 @@
 title {
     text-align: center;
+    width: 150px;
 }
 body {
     font-family:'Courier New', Courier, monospace;
@@ -20,10 +21,34 @@ button {
 h1 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    position: relative;
+    background-color: aliceblue;
+    width: 400px;
+    left: 100px;
 }
 
 #pokemonImage {
     width: 600px;
     height: 600px;
     text-align: center;
+}
+
+body.dark-mode {
+    background-color: rgb(46, 42, 54);
+}
+
+p { 
+    text-align: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    width: 300px;
+    left: 150px;
+}
+
+p2 {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    left: 100px;
+    background-color: aliceblue;
 }

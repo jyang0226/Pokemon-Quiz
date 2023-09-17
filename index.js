@@ -43,3 +43,13 @@ document.addEventListener("keydown", function(event) {
         toggleDarkMode();
     }
 });
+
+function toggleDarkMode() {
+    const body = document.body;
+
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+    } else {
+        body.classList.add('dark-mode');
+    }
+}
