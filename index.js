@@ -15,12 +15,15 @@ async function fetchRandomPokemon() {
     }
 }
 
+let score = 0;
 document.getElementById("submitGuess").addEventListener("click", function() {
     const userGuess = document.getElementById("userGuess").value.toLowerCase();
     const result = document.getElementById("result");
     
     if (userGuess === currentPokemonName) {
         result.textContent = "Pokemon Caught!";
+        score++;
+        updateScoreboard();
         fetchRandomPokemon();
     } else {
         result.textContent = "Pokemon Fled...";
@@ -30,3 +33,7 @@ document.getElementById("submitGuess").addEventListener("click", function() {
 
 fetchRandomPokemon();
 
+function updateScoreboard() {
+    const scoreElement = document.getElementById("score");
+    scoreElement.textContent = score;
+}
