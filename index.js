@@ -14,3 +14,18 @@ async function fetchRandomPokemon() {
         console.log("Error catching Pokemon", error);
     }
 }
+
+document.getElementById("submitGuess").addEventListener("click", function() {
+    const userGuess = document.getElementById("userGuess").ariaValueMax.toLowerCase();
+    const result = document.getElementById("result");
+
+    if (userGuess === currentPokemonName) {
+        result.textContent = "You caught the Pokemon!";
+        fetchRandomPokemon();
+    } else {
+        result.textContent = "Pokemon fled :("
+        fetchRandomPokemon();
+    }
+})
+
+fetchRandomPokemon();
